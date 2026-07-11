@@ -5,16 +5,16 @@
 
 :root {
   /* --- Paleta --- */
-  --color-paper:      #E9E4D8; /* papel */
-  --color-paper-alt:  #DFD9C9; /* papel un poco más oscuro (tarjetas/franjas) */
-  --color-ink:        #1C1B18; /* tinta / texto principal */
-  --color-ink-soft:   #55524A; /* texto secundario */
-  --color-rojo:       #B23A2E; /* rojo tinta - urgente / marca */
-  --color-verde-rio:  #2F5233; /* verde ribera del Paraná */
-  --color-mustaza:    #C98A1A; /* acento cálido */
-  --color-linea:      #C7C0AC; /* líneas y bordes */
+  --color-paper:      #E9E4D8; 
+  --color-paper-alt:  #DFD9C9; 
+  --color-ink:        #1C1B18; 
+  --color-ink-soft:   #55524A; 
+  --color-rojo:       #B23A2E; 
+  --color-verde-rio:  #2F5233;
+  --color-mustaza:    #C98A1A; 
+  --color-linea:      #C7C0AC; 
 
-  /* --- Tipografía --- */
+
   --font-display: 'Big Shoulders Display', sans-serif;
   --font-body:    'Source Serif 4', serif;
   --font-mono:    'IBM Plex Mono', monospace;
@@ -22,7 +22,7 @@
   --max-width: 1180px;
 }
 
-/* --- Reset básico --- */
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { -webkit-text-size-adjust: 100%; }
@@ -44,10 +44,6 @@ ul { list-style: none; }
   margin-inline: auto;
   padding-inline: 1rem;
 }
-
-/* =========================================================
-   HEADER / MASTHEAD  (Mobile first)
-   ========================================================= */
 
 .site-header {
   background-color: var(--color-paper);
@@ -101,10 +97,10 @@ ul { list-style: none; }
 }
 
 .dateline {
-  display: none; /* se oculta en mobile para no saturar el header */
+  display: none; 
 }
 
-/* Nav: en mobile queda oculta, sólo se ve vía hamburguesa (sin JS funcional) */
+
 .main-nav {
   display: none;
   border-top: 1px solid var(--color-linea);
@@ -144,10 +140,6 @@ ul { list-style: none; }
     96% 0%, 100% 100%, 100% 0%
   );
 }
-
-/* =========================================================
-   NOTICIAS DESTACADAS  (Mobile first: columna única)
-   ========================================================= */
 
 .destacada {
   display: flex;
@@ -259,9 +251,6 @@ ul { list-style: none; }
   color: var(--color-rojo);
 }
 
-/* =========================================================
-   PUBLICIDAD
-   ========================================================= */
 
 .publicidad {
   display: flex;
@@ -286,10 +275,6 @@ ul { list-style: none; }
   min-height: 160px;
   padding: 1rem;
 }
-
-/* =========================================================
-   NOTICIAS SECUNDARIAS
-   ========================================================= */
 
 .secundarias {
   padding-block: 2rem;
@@ -336,10 +321,6 @@ ul { list-style: none; }
   color: var(--color-ink-soft);
   font-size: 0.95rem;
 }
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
 
 .site-footer {
   background-color: var(--color-ink);
@@ -398,11 +379,6 @@ ul { list-style: none; }
   font-size: 0.7rem;
   color: #8B8778;
 }
-
-/* =========================================================
-   RESPONSIVE — TABLET (≥768px)
-   El nav horizontal aparece; la hamburguesa se oculta.
-   ========================================================= */
 
 @media (min-width: 768px) {
 
@@ -513,9 +489,6 @@ ul { list-style: none; }
   }
 }
 
-/* =========================================================
-   RESPONSIVE — DESKTOP (≥1024px)
-   ========================================================= */
 
 @media (min-width: 1024px) {
 
